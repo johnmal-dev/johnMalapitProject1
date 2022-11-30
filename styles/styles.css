@@ -401,3 +401,36 @@ a {
   font-size: 2.1rem;
   line-height: 2.8rem;
 }
+
+.hero {
+  background-color: #345231;
+}
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.hero .container .img-container {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  -webkit-box-shadow: 0.6rem 0.6rem #fff;
+          box-shadow: 0.6rem 0.6rem #fff;
+}
+.hero .container .img-container img {
+  max-width: 100%;
+}
+.hero .container h1::before {
+  content: url(../../../assets/circle-text.png);
+  -webkit-transform: scale(0.51) translate(-90%, -53%);
+          transform: scale(0.51) translate(-90%, -53%);
+  position: absolute;
+}

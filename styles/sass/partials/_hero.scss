@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.hero {
+  background-color: $pine;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .img-container {
+      flex-basis: 35%;
+      transform: translateY(2rem);
+      box-shadow: 0.6rem 0.6rem #fff;
+      img {
+        max-width: 100%;
+      }
+    }
+    h1 {
+      &::before {
+        content: url(../../../assets/circle-text.png);
+        transform: scale(0.51) translate(-90%, -53%);
+        position: absolute;
+      }
+    }
+  }
+}
