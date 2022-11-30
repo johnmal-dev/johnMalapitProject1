@@ -80,8 +80,13 @@ nav {
 }
 
 button {
+  font-family: $headingFont, cursive;
   text-align: center;
   line-height: 1.6rem;
+  border: none;
+  background-color: $accent;
+  padding: 10px 20px;
+  margin: 10px 0;
 }
 
 p {

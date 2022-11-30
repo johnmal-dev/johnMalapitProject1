@@ -332,8 +332,13 @@ nav {
 }
 
 button {
+  font-family: "Abril Fatface", cursive;
   text-align: center;
   line-height: 1.6rem;
+  border: none;
+  background-color: #e4a436;
+  padding: 10px 20px;
+  margin: 10px 0;
 }
 
 p {
@@ -433,4 +438,11 @@ a {
   -webkit-transform: scale(0.51) translate(-90%, -53%);
           transform: scale(0.51) translate(-90%, -53%);
   position: absolute;
+}
+
+.cta {
+  background-color: #f6f6f6;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  text-align: center;
 }
