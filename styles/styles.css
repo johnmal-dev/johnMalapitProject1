@@ -324,6 +324,8 @@ h4 {
 }
 
 nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #f6f6f6;
   text-align: right;
   line-height: 1.45rem;
@@ -373,4 +375,29 @@ a {
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+}
+.navbar {
+  background-color: #345231;
+}
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar ul li {
+  padding: 0 20px;
+}
+.navbar ul li:hover {
+  color: #e4a436;
+}
+.navbar ul li.home {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.1rem;
+  line-height: 2.8rem;
 }

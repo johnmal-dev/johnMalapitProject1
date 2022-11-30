@@ -72,6 +72,8 @@ h4 {
 }
 
 nav {
+  font-family: $bodyFont, sans-serif;
+  font-weight: bold;
   color: $white-shade;
   text-align: right;
   line-height: 1.45rem;
