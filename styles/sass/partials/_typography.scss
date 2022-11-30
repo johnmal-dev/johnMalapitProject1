@@ -1,0 +1,113 @@
+@use 'variables' as *;
+
+/* import Abril Fatface font */
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('../fonts/Abril_Fatface/AbrilFatface-Regular.ttf');
+  font-weight: normal;
+}
+
+/* import Montserrat font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/static/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+
+/* import Montserrat font in bold */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
+  font-weight: bold;
+}
+
+html {
+  /* if we set our root element font-size to 125%, then 1 rem = 20px */
+  font-size: 125%;
+}
+
+body {
+  font-family: $bodyFont, sans-serif;
+  font-size: 1rem;
+  color: $black;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  font-family: $headingFont, cursive;
+  font-weight: normal;
+  color: $black;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+button {
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  color: $white-shade;
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+nav {
+  color: $white-shade;
+  text-align: right;
+  line-height: 1.45rem;
+}
+
+button {
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
