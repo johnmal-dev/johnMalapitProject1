@@ -539,3 +539,20 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.gallery {
+  padding: 75px 0;
+}
+.gallery .container .images-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+.gallery .container .images-container .img-container {
+  width: 33%;
+}
+.gallery .container .images-container .img-container img {
+  max-width: 100%;
+}

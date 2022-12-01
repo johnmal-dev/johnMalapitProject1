@@ -1,0 +1,16 @@
+.gallery {
+  padding: 75px 0;
+  .container {
+    .images-container {
+      width: 100%;
+      display: flex;
+      gap: 25px;
+      .img-container {
+        width: 33%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
