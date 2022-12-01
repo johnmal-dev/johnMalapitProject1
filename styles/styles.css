@@ -556,3 +556,44 @@ a {
 .gallery .container .images-container .img-container img {
   max-width: 100%;
 }
+
+.more {
+  background-color: #f6f6f6;
+}
+.more .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 75px 0;
+}
+.more .container .item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+.more .container .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+  height: 40px;
+  width: 40px;
+  background-color: #e4a436;
+  border-radius: 50%;
+}
+.more .container .item-1::before {
+  content: url("../../../assets/svg/photo.svg");
+}
+.more .container .item-2::before {
+  content: url("../../../assets/svg/about.svg");
+}
+.more .container .item-3::before {
+  content: url("../../../assets/svg/blog.svg");
+}
+.more .container .item-4::before {
+  content: url("../../../assets/svg/contact.svg");
+}

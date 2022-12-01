@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+.more {
+  background-color: $white-shade;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+    .item {
+      flex-basis: 50%;
+      padding-left: 50px;
+      padding-bottom: 25px;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        transform: translate(-50px, 0);
+        height: 40px;
+        width: 40px;
+        background-color: $accent;
+        border-radius: 50%;
+      }
+    }
+    .item-1 {
+      &::before {
+        content: url('../../../assets/svg/photo.svg');
+      }
+    }
+    .item-2 {
+      &::before {
+        content: url('../../../assets/svg/about.svg');
+      }
+    }
+    .item-3 {
+      &::before {
+        content: url('../../../assets/svg/blog.svg');
+      }
+    }
+    .item-4 {
+      &::before {
+        content: url('../../../assets/svg/contact.svg');
+      }
+    }
+  }
+}
