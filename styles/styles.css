@@ -597,3 +597,10 @@ a {
 .more .container .item-4::before {
   content: url("../../../assets/svg/contact.svg");
 }
+
+footer {
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 5px 0;
+}
