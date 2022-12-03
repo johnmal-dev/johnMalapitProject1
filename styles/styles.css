@@ -378,6 +378,16 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 425px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 85%;
+  }
+}
 .navbar {
   background-color: #345231;
 }
@@ -677,6 +687,48 @@ a {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    padding: 75px 0;
+  }
+  .gallery .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 25px;
+  }
+  .gallery .container .img-container {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .gallery .container .img-container img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .gallery {
+    padding: 75px 0;
+  }
+  .gallery .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery .container .img-container {
+    width: 80%;
+  }
+  .gallery .container .img-container img {
+    max-width: 100%;
+  }
+}
 .more {
   background-color: #f6f6f6;
 }
@@ -758,31 +810,7 @@ footer {
   .cta-2 .container .text-container p {
     text-align: left;
   }
-  .gallery {
-    padding: 75px 0;
-  }
-  .gallery .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 25px;
-  }
-  .gallery .container .img-container {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
-  }
-  .gallery .container .img-container img {
-    max-width: 100%;
-  }
 }
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
 }

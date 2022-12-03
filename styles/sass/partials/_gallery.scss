@@ -11,3 +11,38 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 75px 0;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      .img-container {
+        flex-basis: 80%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .gallery {
+    padding: 75px 0;
+    .container {
+      display: flex;
+      // gap: 25px;
+      .img-container {
+        width: 80%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

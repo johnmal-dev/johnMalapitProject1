@@ -123,3 +123,15 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+
+@media (max-width: 425px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 85%;
+  }
+}
