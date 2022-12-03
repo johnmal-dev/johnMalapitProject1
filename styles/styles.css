@@ -502,12 +502,25 @@ a {
      object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .cta-1 {
+    padding-bottom: 50px;
+  }
+  .cta-2 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.categories {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .categories .category {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .categories .category .img-container img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -564,26 +577,7 @@ a {
 
 @media (max-width: 768px) {
   .categories .category {
-    display: grid;
     grid-template-columns: 1fr;
-  }
-  .categories .category .img-container img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .categories .category .text-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .categories .category button {
-    width: auto;
   }
   .categories .category-1 .img-container {
     -webkit-transform: none;
@@ -595,12 +589,6 @@ a {
     padding-top: 50px;
     padding-left: 0;
     padding-bottom: 25px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .categories .category-2 .img-container {
     -webkit-box-ordinal-group: 1;
@@ -614,14 +602,11 @@ a {
   .categories .category-2 .text-container {
     padding-top: 50px;
     padding-right: 0;
-    padding-bottom: 25px;
+    padding-bottom: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 .page-break {
@@ -652,16 +637,13 @@ a {
   background-color: #f6f6f6;
 }
 .more .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 75px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .more .container .item {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   padding-left: 50px;
   padding-bottom: 25px;
 }
@@ -689,6 +671,13 @@ a {
   content: url("../../../assets/svg/contact.svg");
 }
 
+@media (max-width: 768px) {
+  .more .container {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 footer {
   background-color: #1f1f1f;
   color: #f6f6f6;

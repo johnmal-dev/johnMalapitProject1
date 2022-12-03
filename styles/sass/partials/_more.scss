@@ -3,11 +3,12 @@
 .more {
   background-color: $white-shade;
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 75px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     .item {
-      flex-basis: 50%;
       padding-left: 50px;
       padding-bottom: 25px;
       &::before {
@@ -40,6 +41,16 @@
       &::before {
         content: url('../../../assets/svg/contact.svg');
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .more {
+    .container {
+      grid-template-columns: 1fr;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 }
