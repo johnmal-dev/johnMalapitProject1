@@ -5,3 +5,15 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (max-width: 1024px) {
+  .page-break {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-break {
+    height: 250px;
+  }
+}

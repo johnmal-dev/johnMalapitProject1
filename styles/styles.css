@@ -453,6 +453,7 @@ a {
 .hero .container .img-container {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
+  width: 50%;
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
   -webkit-box-shadow: 0.6rem 0.6rem #fff;
@@ -468,6 +469,36 @@ a {
   position: absolute;
 }
 
+@media (max-width: 768px) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+    gap: 0;
+  }
+  .hero .container .img-container {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+    -webkit-box-shadow: 0.6rem 0.6rem #fff;
+            box-shadow: 0.6rem 0.6rem #fff;
+  }
+  .hero .container .img-container img {
+    max-width: 100%;
+  }
+  .hero .container h1::before {
+    content: url(../../../assets/circle-text.png);
+    -webkit-transform: scale(0.51) translate(-90%, -53%);
+            transform: scale(0.51) translate(-90%, -53%);
+    position: absolute;
+  }
+}
 .cta {
   background-color: #f6f6f6;
 }
@@ -484,7 +515,10 @@ a {
 }
 .cta-2 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
 }
 .cta-2 .container .img-container {
@@ -497,11 +531,15 @@ a {
   -webkit-box-shadow: 25px 25px #709b6b;
           box-shadow: 25px 25px #709b6b;
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .cta-2 .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 768px) {
   .cta-1 {
     padding-bottom: 50px;
@@ -510,10 +548,6 @@ a {
     padding-top: 100px;
     padding-bottom: 50px;
   }
-}
-.categories {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 .categories .category {
   display: grid;
@@ -617,6 +651,16 @@ a {
   background-position: center;
 }
 
+@media (max-width: 1024px) {
+  .page-break {
+    height: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .page-break {
+    height: 250px;
+  }
+}
 .gallery {
   padding: 75px 0;
 }
