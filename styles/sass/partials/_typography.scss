@@ -87,6 +87,11 @@ button {
   background-color: $accent;
   padding: 10px 20px;
   margin: 10px 0;
+  transition: 0.1s;
+  &:hover {
+    background-color: $pine;
+    color: $white-shade;
+  }
 }
 
 p {

@@ -22,7 +22,7 @@
   .category-1 {
     .img-container {
       transform: translateY(-50px);
-      box-shadow: 25px 25px $green-grey, -275px 25px $green-grey, -575px 25px $green-grey;
+      box-shadow: 25px 25px $green-grey, -275px 25px $green-grey;
     }
     .text-container {
       padding-top: 25px;
@@ -35,11 +35,12 @@
     .img-container {
       order: 2;
       transform: translateY(25px);
-      box-shadow: 25px 25px $pine, 325px 25px $pine, 625px 25px $pine, 925px 25px $pine;
+      box-shadow: 25px 25px $pine, 325px 25px $pine;
     }
     .text-container {
       padding-top: 25px;
       padding-right: 75px;
+      padding-bottom: 100px;
       align-items: flex-end;
       text-align: end;
       justify-content: flex-start;

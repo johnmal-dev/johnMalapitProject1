@@ -1,9 +1,50 @@
-@media (max-width: 1000px) {
+@use 'variables' as *;
+
+@media (max-width: 1024px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
+  .cta-1 {
+    p {
+      text-align: left;
+    }
+  }
+
+  .cta-2 {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img-container {
+        width: 50%;
+      }
+      .text-container {
+        text-align: center;
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    padding: 75px 0;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      .img-container {
+        flex-basis: 45%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
