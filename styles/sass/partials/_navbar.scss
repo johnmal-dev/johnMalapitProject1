@@ -2,6 +2,11 @@
 
 .navbar {
   background-color: $pine;
+  label,
+  #hamburger {
+    cursor: pointer;
+    display: none;
+  }
   ul {
     display: flex;
     align-items: center;
@@ -16,6 +21,30 @@
       font-family: $headingFont, cursive;
       font-size: 2.1rem;
       line-height: 2.8rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+      li {
+        text-align: center;
+      }
+      li.home {
+        display: none;
+      }
+    }
+    label {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    input:checked ~ ul {
+      display: block;
     }
   }
 }
