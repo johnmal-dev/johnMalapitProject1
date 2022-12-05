@@ -468,6 +468,26 @@ a {
           transform: translateY(0.9rem);
 }
 
+main {
+  background-color: #f6f6f6;
+  padding-top: 100px;
+}
+main .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid red;
+  margin-bottom: 25px;
+}
+
+.border-bottom-green {
+  border-bottom: 5px solid #345231;
+}
+
 footer {
   background-color: #1f1f1f;
   color: #f6f6f6;

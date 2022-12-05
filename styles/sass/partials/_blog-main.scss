@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+main {
+  background-color: $white-shade;
+  padding-top: 100px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid red;
+  margin-bottom: 25px;
+}
+
+.border-bottom-green {
+  border-bottom: 5px solid $pine;
+}
