@@ -6,16 +6,43 @@ main {
   .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 40px;
+    gap: 50px;
   }
 }
 
-section {
+section.post,
+.comment-container,
+section.about,
+section.recent {
   background-color: #fff;
-  border: 1px solid red;
   margin-bottom: 25px;
+  padding: 50px;
 }
 
 .border-bottom-green {
   border-bottom: 5px solid $pine;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 4fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  input {
+    border: none;
+    padding: 25px 50px;
+  }
+  textarea {
+    border: none;
+    padding: 50px 50px;
+  }
+  textarea#comment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
