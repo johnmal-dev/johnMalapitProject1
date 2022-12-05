@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mq-tablet) {
   .categories {
     .category {
       grid-template-columns: 1fr;

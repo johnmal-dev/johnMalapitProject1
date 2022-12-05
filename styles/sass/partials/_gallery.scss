@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .gallery {
   padding: 75px 0;
   .container {
@@ -12,7 +14,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mq-tablet) {
   .gallery {
     padding: 75px 0;
     .container {
@@ -31,7 +33,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mq-mobile-lg) {
   .gallery {
     padding: 75px 0;
     .container {

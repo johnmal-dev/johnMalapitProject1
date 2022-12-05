@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .page-break {
   background: url('../../../assets/home-image-5.jpg');
   height: 500px;
@@ -6,13 +8,13 @@
   background-position: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mq-desktop-sm) {
   .page-break {
     height: 350px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mq-tablet) {
   .page-break {
     height: 250px;
   }

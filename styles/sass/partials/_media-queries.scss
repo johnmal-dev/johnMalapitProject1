@@ -1,37 +1,13 @@
 @use 'variables' as *;
 
-@media (max-width: 1024px) {
+@media (max-width: $mq-desktop-sm) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mq-tablet) {
   /* all of our styles for TABLET devices will go within this breakpoint */
-  .cta-1 {
-    p {
-      text-align: left;
-    }
-  }
-
-  .cta-2 {
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .img-container {
-        width: 50%;
-      }
-      .text-container {
-        text-align: center;
-        p {
-          text-align: left;
-        }
-      }
-    }
-  }
-
-  
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mq-mobile-lg) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
 }

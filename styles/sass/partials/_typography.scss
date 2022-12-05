@@ -124,13 +124,13 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width: 425px) {
+@media (max-width: $mq-mobile-lg) {
   html {
     font-size: 100%;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: $mq-mobile-sm) {
   html {
     font-size: 85%;
   }
