@@ -10,61 +10,21 @@ main {
   }
 }
 
-.border-bottom-green {
-  border-bottom: 5px solid $pine;
-}
-
-.post,
-.comment-container,
-.about,
-.recent {
+.info {
   background-color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   padding: 50px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  p {
-    margin-bottom: 0;
-  }
-  a {
-    color: $green-grey;
-    font-weight: bold;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  img {
-    width: 100%;
-  }
-}
-
-.recent {
-  h3 {
-    padding-bottom: 20px;
-  }
-  ul {
-    list-style: disc;
-    padding-left: 25px;
-  }
-  li {
-    padding: 5px 0;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-}
-
-.comments {
-  .comment-container {
+  .socials {
     display: flex;
     gap: 25px;
-    p {
-      margin: 5px 0;
+    color: $pine;
+  }
+  .email {
+    font-weight: bold;
+  }
+  address {
+    span {
+      display: block;
     }
   }
 }
@@ -107,11 +67,6 @@ form {
       }
     }
   }
-  .about {
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
-  }
   form {
     margin-bottom: 25px;
   }
@@ -121,16 +76,11 @@ form {
   form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
     textarea#comment {
       height: 300px;
     }
   }
-  .post,
-  .comment-container,
-  .about,
-  .recent {
-    background-color: #fff;
+  .info {
     margin-bottom: 25px;
     padding: 25px;
   }
