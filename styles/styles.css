@@ -368,14 +368,16 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .container {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+}
+
+.active {
+  color: #e4a436;
 }
 
 @media (max-width: 425px) {
@@ -411,7 +413,7 @@ a {
   padding: 0 20px;
 }
 .navbar ul li:hover {
-  color: #e4a436;
+  text-decoration: underline;
 }
 .navbar ul li.home {
   font-family: "Abril Fatface", cursive;
@@ -807,6 +809,9 @@ footer {
   padding: 5px 0;
 }
 
+@media (max-width: 1440px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
 @media (max-width: 1024px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }

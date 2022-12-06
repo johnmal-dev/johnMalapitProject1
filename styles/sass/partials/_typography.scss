@@ -115,13 +115,16 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .container {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+}
+
+.active {
+  color: $accent;
 }
 
 @media (max-width: $mq-mobile-lg) {

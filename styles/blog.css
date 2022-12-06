@@ -368,14 +368,16 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .container {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+}
+
+.active {
+  color: #e4a436;
 }
 
 @media (max-width: 425px) {
@@ -411,7 +413,7 @@ a {
   padding: 0 20px;
 }
 .navbar ul li:hover {
-  color: #e4a436;
+  text-decoration: underline;
 }
 .navbar ul li.home {
   font-family: "Abril Fatface", cursive;
@@ -473,8 +475,12 @@ main {
 }
 main .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
   gap: 50px;
+}
+
+.border-bottom-green {
+  border-bottom: 5px solid #345231;
 }
 
 .post,
@@ -507,6 +513,9 @@ main .container {
 .about a:hover {
   text-decoration: underline;
 }
+.about img {
+  width: 100%;
+}
 
 .recent h3 {
   padding-bottom: 20px;
@@ -532,12 +541,9 @@ main .container {
   margin: 5px 0;
 }
 
-.border-bottom-green {
-  border-bottom: 5px solid #345231;
-}
-
 form {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 4fr 1fr;
   -webkit-column-gap: 20px;
@@ -547,6 +553,7 @@ form {
   margin-bottom: 100px;
 }
 form input {
+  width: 100%;
   border: none;
   padding: 25px 50px;
 }
@@ -570,6 +577,9 @@ footer {
   padding: 5px 0;
 }
 
+@media (max-width: 1440px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
 @media (max-width: 1024px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }

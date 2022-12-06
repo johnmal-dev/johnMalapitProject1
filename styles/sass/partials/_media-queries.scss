@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+@media (max-width: $mq-desktop-lg) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
+
 @media (max-width: $mq-desktop-sm) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
