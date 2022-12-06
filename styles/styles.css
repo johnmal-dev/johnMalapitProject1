@@ -809,9 +809,6 @@ footer {
   padding: 5px 0;
 }
 
-@media (max-width: 1440px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-}
 @media (max-width: 1024px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
