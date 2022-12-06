@@ -1,34 +1,35 @@
 @use 'variables' as *;
 
-.blog {
-  header {
-    background-image: url(../../../assets/blog-image-1.jpg);
-    background-size: cover;
-    height: 400px;
-    align-items: baseline;
-    .container {
-      display: flex;
-      height: 100%;
-      align-items: flex-end;
-      h1 {
-        transform: translateY(0.9rem);
-      }
+header {
+  background-size: cover;
+  height: 400px;
+  align-items: baseline;
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    h1 {
+      transform: translateY(0.9rem);
     }
   }
 }
 
+.blog header {
+  background-image: url(../../../assets/blog-image-1.jpg);
+}
+
+.contact header {
+  background-image: url(../../../assets/contact-image-1.jpg);
+}
+
 @media (max-width: $mq-desktop-sm) {
-  .blog {
-    header {
-      height: 300px;
-    }
+  header {
+    height: 300px;
   }
 }
 
 @media (max-width: $mq-tablet) {
-  .blog {
-    header {
-      height: 200px;
-    }
+  header {
+    height: 200px;
   }
 }
