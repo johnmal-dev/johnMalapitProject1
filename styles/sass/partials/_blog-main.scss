@@ -5,9 +5,7 @@ main {
   padding-top: 100px;
   .container {
     display: grid;
-    // grid-template-columns: 1fr 1fr;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    // grid-auto-flow: column;
     gap: 50px;
   }
 }
@@ -95,5 +93,45 @@ form {
   button {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+}
+
+@media (max-width: $mq-desktop-sm) {
+  main {
+    padding-top: 50px;
+    .container {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      .side-column {
+        order: 2;
+      }
+    }
+  }
+  .about {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+  form {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $mq-tablet) {
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    textarea#comment {
+      height: 300px;
+    }
+  }
+  .post,
+  .comment-container,
+  .about,
+  .recent {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
   }
 }

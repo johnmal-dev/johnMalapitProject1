@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .blog {
   header {
     background-image: url(../../../assets/blog-image-1.jpg);
@@ -11,6 +13,22 @@
       h1 {
         transform: translateY(0.9rem);
       }
+    }
+  }
+}
+
+@media (max-width: $mq-desktop-sm) {
+  .blog {
+    header {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: $mq-tablet) {
+  .blog {
+    header {
+      height: 200px;
     }
   }
 }

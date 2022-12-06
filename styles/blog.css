@@ -469,6 +469,16 @@ a {
           transform: translateY(0.9rem);
 }
 
+@media (max-width: 1024px) {
+  .blog header {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .blog header {
+    height: 200px;
+  }
+}
 main {
   background-color: #f6f6f6;
   padding-top: 100px;
@@ -570,6 +580,56 @@ form button {
   grid-column-end: 3;
 }
 
+@media (max-width: 1024px) {
+  main {
+    padding-top: 50px;
+  }
+  main .container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  main .container .side-column {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 25px;
+  }
+  form {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 25px;
+  }
+  form textarea#comment {
+    height: 300px;
+  }
+  .post,
+.comment-container,
+.about,
+.recent {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+  }
+}
 footer {
   background-color: #1f1f1f;
   color: #f6f6f6;
