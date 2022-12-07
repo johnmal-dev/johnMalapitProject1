@@ -421,12 +421,17 @@ a {
   width: 0px;
   height: 1px;
   display: block;
-  background: #e4a436;
+  background-color: #f6f6f6;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 .navbar ul li a:hover::after {
   width: 100%;
+}
+.navbar ul li.active a::after {
+  background-color: #e4a436;
 }
 .navbar ul li.home {
   font-family: "Abril Fatface", cursive;

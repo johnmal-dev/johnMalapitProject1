@@ -19,11 +19,19 @@
           width: 0px;
           height: 1px;
           display: block;
-          background: $accent;
-          transition: .3s;
+          background-color: $white-shade;
+          transition: 0.3s;
+          transform: translateY(-2px);
         }
         &:hover::after {
           width: 100%;
+        }
+      }
+    }
+    li.active {
+      a {
+        &::after {
+          background-color: $accent;
         }
       }
     }
