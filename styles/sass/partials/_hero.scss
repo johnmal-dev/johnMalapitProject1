@@ -29,25 +29,9 @@
 @media (max-width: $mq-tablet) {
   .hero {
     .container {
-      display: flex;
       flex-direction: column;
       padding-top: 50px;
       gap: 0;
-      .img-container {
-        flex-basis: 35%;
-        transform: translateY(2rem);
-        box-shadow: 0.6rem 0.6rem #fff;
-        img {
-          max-width: 100%;
-        }
-      }
-      h1 {
-        &::before {
-          content: url(../../../assets/circle-text.png);
-          transform: scale(0.51) translate(-90%, -53%);
-          position: absolute;
-        }
-      }
     }
   }
 }

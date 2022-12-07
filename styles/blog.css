@@ -342,8 +342,8 @@ button,
   background-color: #e4a436;
   padding: 10px 20px;
   margin: 10px 0;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 button:hover, button:focus,
 .button:hover,
