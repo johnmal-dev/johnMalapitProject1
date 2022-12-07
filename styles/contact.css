@@ -342,8 +342,8 @@ button,
   background-color: #e4a436;
   padding: 10px 20px;
   margin: 10px 0;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 button:hover, button:focus,
 .button:hover,
@@ -530,8 +530,20 @@ main .container {
   gap: 25px;
   color: #345231;
 }
+.info .socials li a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.info .socials li a:hover, .info .socials li a:focus {
+  color: #e4a436;
+}
 .info .email {
   font-weight: bold;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.info .email:hover, .info .email:focus {
+  color: #e4a436;
 }
 .info address span {
   display: block;

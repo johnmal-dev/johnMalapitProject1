@@ -20,9 +20,21 @@ main {
     display: flex;
     gap: 25px;
     color: $pine;
+    li a {
+      transition: all 0.3s;
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
+    }
   }
   .email {
     font-weight: bold;
+    transition: all 0.3s;
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
   }
   address {
     span {
