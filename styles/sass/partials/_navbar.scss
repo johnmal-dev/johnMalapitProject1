@@ -13,8 +13,18 @@
     justify-content: center;
     li {
       padding: 0 20px;
-      &:hover {
-        text-decoration: underline;
+      a {
+        &::after {
+          content: '';
+          width: 0px;
+          height: 1px;
+          display: block;
+          background: $accent;
+          transition: .3s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
     li.home {

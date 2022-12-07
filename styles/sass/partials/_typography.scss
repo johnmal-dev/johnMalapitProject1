@@ -49,7 +49,8 @@ h2,
 h3,
 h4,
 nav,
-button {
+button,
+.button {
   letter-spacing: 0.05rem;
 }
 
@@ -79,7 +80,8 @@ nav {
   line-height: 1.45rem;
 }
 
-button {
+button,
+.button {
   font-family: $headingFont, cursive;
   text-align: center;
   line-height: 1.6rem;
@@ -88,7 +90,8 @@ button {
   padding: 10px 20px;
   margin: 10px 0;
   transition: 0.1s;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $pine;
     color: $white-shade;
   }

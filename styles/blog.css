@@ -302,7 +302,8 @@ h2,
 h3,
 h4,
 nav,
-button {
+button,
+.button {
   letter-spacing: 0.05rem;
 }
 
@@ -332,7 +333,8 @@ nav {
   line-height: 1.45rem;
 }
 
-button {
+button,
+.button {
   font-family: "Abril Fatface", cursive;
   text-align: center;
   line-height: 1.6rem;
@@ -343,7 +345,9 @@ button {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
-button:hover {
+button:hover, button:focus,
+.button:hover,
+.button:focus {
   background-color: #345231;
   color: #f6f6f6;
 }
@@ -412,8 +416,17 @@ a {
 .navbar ul li {
   padding: 0 20px;
 }
-.navbar ul li:hover {
-  text-decoration: underline;
+.navbar ul li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #e4a436;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navbar ul li a:hover::after {
+  width: 100%;
 }
 .navbar ul li.home {
   font-family: "Abril Fatface", cursive;
@@ -527,7 +540,7 @@ main .container {
   font-weight: bold;
   text-decoration: none;
 }
-.about a:hover {
+.about a:hover, .about a:focus {
   text-decoration: underline;
 }
 .about img {

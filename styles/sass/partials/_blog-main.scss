@@ -34,7 +34,8 @@ main {
     color: $green-grey;
     font-weight: bold;
     text-decoration: none;
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }
