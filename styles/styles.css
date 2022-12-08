@@ -766,31 +766,41 @@ a {
   padding-bottom: 75px;
 }
 .more .container .item {
+  position: relative;
   padding-left: 50px;
   padding-bottom: 25px;
 }
 .more .container .item::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   content: "";
-  display: block;
+  font-family: FontAwesome;
+  font-size: 0.8rem;
   position: absolute;
-  -webkit-transform: translate(-50px, 0);
-          transform: translate(-50px, 0);
+  left: -5px;
   height: 40px;
   width: 40px;
   background-color: #e4a436;
   border-radius: 50%;
 }
 .more .container .item-1::before {
-  content: url("../../../assets/svg/photo.svg");
+  content: "\f03e";
 }
 .more .container .item-2::before {
-  content: url("../../../assets/svg/about.svg");
+  content: "\f007";
 }
 .more .container .item-3::before {
-  content: url("../../../assets/svg/blog.svg");
+  content: "\f390";
 }
 .more .container .item-4::before {
-  content: url("../../../assets/svg/contact.svg");
+  content: "\f879";
 }
 
 @media (max-width: 768px) {

@@ -9,13 +9,18 @@
     padding-top: 75px;
     padding-bottom: 75px;
     .item {
+      position: relative;
       padding-left: 50px;
       padding-bottom: 25px;
       &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         content: '';
-        display: block;
+        font-family: FontAwesome;
+        font-size: 0.8rem;
         position: absolute;
-        transform: translate(-50px, 0);
+        left: -5px;
         height: 40px;
         width: 40px;
         background-color: $accent;
@@ -24,22 +29,22 @@
     }
     .item-1 {
       &::before {
-        content: url('../../../assets/svg/photo.svg');
+        content: '\f03e';
       }
     }
     .item-2 {
       &::before {
-        content: url('../../../assets/svg/about.svg');
+        content: '\f007';
       }
     }
     .item-3 {
       &::before {
-        content: url('../../../assets/svg/blog.svg');
+        content: '\f390';
       }
     }
     .item-4 {
       &::before {
-        content: url('../../../assets/svg/contact.svg');
+        content: '\f879';
       }
     }
   }
