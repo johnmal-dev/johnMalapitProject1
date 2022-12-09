@@ -35,3 +35,27 @@
     }
   }
 }
+
+@media (max-width: $mq-mobile-lg) {
+  .hero {
+    .container {
+      h1 {
+        &::before {
+          transform: scale(0.44) translate(-108%, -73%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mq-mobile-sm) {
+  .hero {
+    .container {
+      h1 {
+        &::before {
+          transform: scale(0.42) translate(-110%, -82%);
+        }
+      }
+    }
+  }
+}
