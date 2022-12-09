@@ -2,12 +2,12 @@
 
 .navbar {
   background-color: $pine;
-  label,
-  #hamburger {
+  .menu-button-container,
+  .menu-toggle {
     cursor: pointer;
     display: none;
   }
-  ul {
+  .menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@
 
 @media (max-width: $mq-tablet) {
   .navbar {
-    ul {
+    .menu {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -59,12 +59,12 @@
         display: none;
       }
     }
-    label {
+    .menu-button-container {
       display: inline-block;
       margin: 10px 0;
     }
-    input:checked ~ ul li {
-        height: 1.5rem;
+    .menu-toggle:checked ~ .menu li {
+      height: 1.5rem;
     }
   }
 }
