@@ -10,6 +10,7 @@ header {
     align-items: flex-end;
     h1 {
       transform: translateY(0.9rem);
+      user-select: none;
     }
   }
 }

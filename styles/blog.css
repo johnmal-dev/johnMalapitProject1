@@ -490,6 +490,10 @@ header .container {
 header .container h1 {
   -webkit-transform: translateY(0.9rem);
           transform: translateY(0.9rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .blog header {

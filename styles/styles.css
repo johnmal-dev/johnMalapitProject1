@@ -498,6 +498,12 @@ a {
 .hero .container .img-container img {
   max-width: 100%;
 }
+.hero .container h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .hero .container h1::before {
   content: url(../../../assets/circle-text.png);
   -webkit-transform: scale(0.51) translate(-90%, -53%);
