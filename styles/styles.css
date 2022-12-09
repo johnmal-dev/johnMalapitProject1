@@ -335,6 +335,7 @@ nav {
 
 button,
 .button {
+  cursor: pointer;
   font-family: "Abril Fatface", cursive;
   text-align: center;
   line-height: 1.6rem;
@@ -793,6 +794,10 @@ a {
   padding-left: 50px;
   padding-bottom: 25px;
 }
+.more .container .item h3 {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .more .container .item::before {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +817,9 @@ a {
   width: 40px;
   background-color: #e4a436;
   border-radius: 50%;
+}
+.more .container .item:hover h3 {
+  color: #e4a436;
 }
 .more .container .item-1::before {
   content: "\f03e";

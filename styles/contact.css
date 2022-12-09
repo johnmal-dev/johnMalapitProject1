@@ -335,6 +335,7 @@ nav {
 
 button,
 .button {
+  cursor: pointer;
   font-family: "Abril Fatface", cursive;
   text-align: center;
   line-height: 1.6rem;
