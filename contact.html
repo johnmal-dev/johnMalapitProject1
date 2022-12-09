@@ -27,17 +27,22 @@
     <nav class="navbar">
       <div class="container">
         <!-- Hamburger Button -->
-        <label for="hamburger">&#9776;</label>
+        <label
+          class="menu-button-container"
+          for="hamburger"
+          >&#9776;</label
+        >
         <input
+          class="menu-toggle"
           type="checkbox"
           id="hamburger"
         />
-        <ul>
-          <li><a href="index.html">HOME</a></li>
+        <ul class="menu">
+          <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
-          <li class="home"><a href="index.html">WILLOW</a></li>
+          <li class="home"><a href="#">WILLOW</a></li>
           <li><a href="blog.html">BLOG</a></li>
-          <li class="active"><a href="#">CONTACT</a></li>
+          <li class="active"><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
     </nav>
@@ -51,19 +56,19 @@
         <section class="info">
           <ul class="socials">
             <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f" alt="link to facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter" alt="link to twitter"></i></a>
             </li>
             <li>
               <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-linkedin-in" alt="link to linkedin"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram" alt="link to instagram"></i>
               </a>
             </li>
           </ul>
@@ -78,18 +83,33 @@
           </address>
         </section>
         <form action="#">
+          <label
+            class="sr-only"
+            for="name"
+            >Enter Name</label
+          >
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Name"
           />
+          <label
+            class="sr-only"
+            for="email"
+            >Enter Email</label
+          >
           <input
             type="text"
             name="email"
             id="email"
             placeholder="Email address"
           />
+          <label
+            class="sr-only"
+            for="comment"
+            >Enter Comment</label
+          >
           <textarea
             type="text"
             name="comment"
