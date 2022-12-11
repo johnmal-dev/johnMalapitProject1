@@ -853,13 +853,3 @@ footer {
   text-align: center;
   padding: 5px 0;
 }
-
-@media (max-width: 1024px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-}
-@media (max-width: 768px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
-}
-@media (max-width: 425px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
-}
