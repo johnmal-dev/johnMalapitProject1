@@ -6,7 +6,7 @@
     display: flex;
     gap: 25px;
     .img-container {
-      width: 33%;
+      flex-basis: 33%;
       img {
         max-width: 100%;
       }
@@ -16,18 +16,13 @@
 
 @media (max-width: $mq-tablet) {
   .gallery {
-    padding: 75px 0;
     .container {
-      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 25px;
       .img-container {
         flex-basis: 45%;
-        img {
-          max-width: 100%;
-        }
       }
     }
   }
@@ -35,15 +30,9 @@
 
 @media (max-width: $mq-mobile-lg) {
   .gallery {
-    padding: 75px 0;
     .container {
-      display: flex;
-      // gap: 25px;
       .img-container {
         flex-basis: 100%;
-        img {
-          max-width: 100%;
-        }
       }
     }
   }
