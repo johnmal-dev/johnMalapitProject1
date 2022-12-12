@@ -547,7 +547,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 100px;
 }
 .cta-2 .container .img-container {
   width: 100%;
@@ -566,6 +566,7 @@ a {
 @media (max-width: 1024px) {
   .cta-2 .container {
     grid-template-columns: 1fr 1fr;
+    gap: 75px;
   }
 }
 @media (max-width: 768px) {
@@ -590,6 +591,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 50px;
   }
   .cta-2 .container .img-container {
     width: 50%;
@@ -638,6 +640,8 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: auto;
+  margin-bottom: 15px;
 }
 .categories .category-2 .img-container {
   -webkit-box-ordinal-group: 3;
