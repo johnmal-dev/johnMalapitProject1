@@ -574,7 +574,7 @@ form textarea {
   border: none;
   padding: 50px 50px;
 }
-form textarea#comment {
+form textarea#message {
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -616,7 +616,7 @@ form button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  form textarea#comment {
+  form textarea#message {
     height: 300px;
   }
   .info {

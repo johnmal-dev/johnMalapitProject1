@@ -61,7 +61,7 @@ form {
     border: none;
     padding: 50px 50px;
   }
-  textarea#comment {
+  textarea#message {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -92,7 +92,7 @@ form {
   form {
     display: flex;
     flex-direction: column;
-    textarea#comment {
+    textarea#message {
       height: 300px;
     }
   }
