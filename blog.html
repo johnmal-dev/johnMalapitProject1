@@ -219,25 +219,28 @@
     <script>
       const commentsContainer = document.getElementById('comments');
       const form = document.getElementById('form');
-      const date = new Date();
-      const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      };
-      
-      let dateString = date.toLocaleDateString('en-US', options);
-      const commaIndex = dateString.indexOf(',');
-      dateString =
-      dateString.slice(0, commaIndex) + dateString.slice(commaIndex + 1);
-      
+
+      function dateString() {
+        const newDate = new Date();
+        const options = {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        };
+
+        let result = newDate.toLocaleDateString('en-US', options);
+        const commaIndex = result.indexOf(',');
+        result = result.slice(0, commaIndex) + result.slice(commaIndex + 1);
+        return result;
+      }
+
       function submitHandler(e) {
         e.preventDefault();
-        
+
         // remove border-bottom-green class from last comment
-        let comments = document.querySelectorAll('.comment-container')
-        const lastComment = comments[comments.length - 1]
+        const comments = document.querySelectorAll('.comment-container');
+        const lastComment = comments[comments.length - 1];
         lastComment.classList.remove('border-bottom-green');
 
         const nameInput = document.getElementById('name');
@@ -267,7 +270,7 @@
 
         // p - Date
         const dateParagraph = document.createElement('p');
-        dateParagraph.textContent = `${dateString} by ${nameInput.value}`;
+        dateParagraph.textContent = `${dateString()} by ${nameInput.value}`;
         textContainer.appendChild(dateParagraph);
 
         // p - comment
