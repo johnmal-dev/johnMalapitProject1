@@ -217,14 +217,17 @@
       <div class="container">Copyright &#169; 2022 John Malapit</div>
     </footer>
     <script>
-      const nameInput = document.getElementById('name');
-      const emailInput = document.getElementById('email');
-      const commentInput = document.getElementById('comment');
       const comments = document.getElementById('comments');
       const form = document.getElementById('form');
+      const date = new Date().toDateString()
+      console.log(date)
 
       function submitHandler(e) {
         e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const commentInput = document.getElementById('comment');
 
         // div.comment-container
         const newDiv = document.createElement('div');
@@ -249,7 +252,7 @@
 
         // p - Date
         const dateParagraph = document.createElement('p');
-        dateParagraph.textContent = `TODAY'S DATE by ${nameInput.value}`;
+        dateParagraph.textContent = `${date} by ${nameInput.value}`;
         textContainer.appendChild(dateParagraph);
 
         // p - comment
@@ -258,9 +261,9 @@
         textContainer.appendChild(commentParagraph);
 
         // clear input values
-        nameInput.value = ''
-        emailInput.value = ''
-        commentInput.value = ''
+        nameInput.value = '';
+        emailInput.value = '';
+        commentInput.value = '';
       }
 
       form.addEventListener('submit', submitHandler);
