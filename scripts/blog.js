@@ -63,6 +63,9 @@ function submitHandler(e) {
   nameInput.value = '';
   emailInput.value = '';
   commentInput.value = '';
+
+  // scroll to latest post
+  newDiv.scrollIntoView({behavior: "smooth"});
 }
 
 form.addEventListener('submit', submitHandler);
