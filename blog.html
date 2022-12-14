@@ -217,7 +217,7 @@
       <div class="container">Copyright &#169; 2022 John Malapit</div>
     </footer>
     <script>
-      const comments = document.getElementById('comments');
+      const commentsContainer = document.getElementById('comments');
       const form = document.getElementById('form');
       const date = new Date();
       const options = {
@@ -226,14 +226,19 @@
         month: 'long',
         day: 'numeric',
       };
-
+      
       let dateString = date.toLocaleDateString('en-US', options);
       const commaIndex = dateString.indexOf(',');
       dateString =
-        dateString.slice(0, commaIndex) + dateString.slice(commaIndex + 1);
-
+      dateString.slice(0, commaIndex) + dateString.slice(commaIndex + 1);
+      
       function submitHandler(e) {
         e.preventDefault();
+        
+        // remove border-bottom-green class from last comment
+        let comments = document.querySelectorAll('.comment-container')
+        const lastComment = comments[comments.length - 1]
+        lastComment.classList.remove('border-bottom-green');
 
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
@@ -241,13 +246,13 @@
 
         // div.comment-container
         const newDiv = document.createElement('div');
-        newDiv.classList.add('comment-container');
+        newDiv.classList.add('comment-container', 'border-bottom-green');
 
         // div.img-container
         const imgContainer = document.createElement('div');
         imgContainer.classList.add('img-container');
         newDiv.appendChild(imgContainer);
-        comments.appendChild(newDiv);
+        commentsContainer.appendChild(newDiv);
 
         // img
         const img = document.createElement('img');
