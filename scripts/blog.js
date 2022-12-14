@@ -51,7 +51,7 @@ function submitHandler(e) {
 
   // p - Date
   const dateParagraph = document.createElement('p');
-  dateParagraph.textContent = `${dateString()} by ${nameInput.value}`;
+  dateParagraph.innerHTML = `${dateString()} by <a href="mailto:${emailInput.value}">${nameInput.value}</a>`;
   textContainer.appendChild(dateParagraph);
 
   // p - comment
@@ -65,7 +65,7 @@ function submitHandler(e) {
   commentInput.value = '';
 
   // scroll to latest post
-  newDiv.scrollIntoView({behavior: "smooth"});
+  newDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 form.addEventListener('submit', submitHandler);

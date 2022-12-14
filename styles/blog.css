@@ -579,6 +579,10 @@ main .container {
 .comments .comment-container p {
   margin: 5px 0;
 }
+.comments .comment-container a {
+  color: #345231;
+  font-weight: bold;
+}
 
 form {
   display: grid;
