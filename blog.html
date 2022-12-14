@@ -219,8 +219,18 @@
     <script>
       const comments = document.getElementById('comments');
       const form = document.getElementById('form');
-      const date = new Date().toDateString()
-      console.log(date)
+      const date = new Date();
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      };
+
+      let dateString = date.toLocaleDateString('en-US', options);
+      const commaIndex = dateString.indexOf(',');
+      dateString =
+        dateString.slice(0, commaIndex) + dateString.slice(commaIndex + 1);
 
       function submitHandler(e) {
         e.preventDefault();
@@ -252,7 +262,7 @@
 
         // p - Date
         const dateParagraph = document.createElement('p');
-        dateParagraph.textContent = `${date} by ${nameInput.value}`;
+        dateParagraph.textContent = `${dateString} by ${nameInput.value}`;
         textContainer.appendChild(dateParagraph);
 
         // p - comment
