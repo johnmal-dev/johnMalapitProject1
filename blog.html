@@ -128,7 +128,10 @@
               Donec vehicula rhoncus mattis.
             </p>
           </section>
-          <section class="comments">
+          <section
+            class="comments"
+            id="comments"
+          >
             <div class="comment-container">
               <div class="img-container">
                 <img
@@ -165,7 +168,10 @@
               </div>
             </div>
           </section>
-          <form action="#">
+          <form
+            action="#"
+            id="form"
+          >
             <label
               class="sr-only"
               for="name"
@@ -176,6 +182,7 @@
               name="name"
               id="name"
               placeholder="Name"
+              required
             />
             <label
               class="sr-only"
@@ -187,6 +194,7 @@
               name="email"
               id="email"
               placeholder="Email address"
+              required
             />
             <label
               class="sr-only"
@@ -198,6 +206,7 @@
               name="comment"
               id="comment"
               placeholder="Comment"
+              required
             ></textarea>
             <button>POST COMMENT</button>
           </form>
@@ -207,5 +216,54 @@
     <footer>
       <div class="container">Copyright &#169; 2022 John Malapit</div>
     </footer>
+    <script>
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const commentInput = document.getElementById('comment');
+      const comments = document.getElementById('comments');
+      const form = document.getElementById('form');
+
+      function submitHandler(e) {
+        e.preventDefault();
+
+        // div.comment-container
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('comment-container');
+
+        // div.img-container
+        const imgContainer = document.createElement('div');
+        imgContainer.classList.add('img-container');
+        newDiv.appendChild(imgContainer);
+        comments.appendChild(newDiv);
+
+        // img
+        const img = document.createElement('img');
+        img.setAttribute('src', './assets/snape.png');
+        img.setAttribute('alt', "The current user's profile picture");
+        imgContainer.appendChild(img);
+
+        // div.text-container
+        const textContainer = document.createElement('div');
+        textContainer.classList.add('text-container');
+        newDiv.appendChild(textContainer);
+
+        // p - Date
+        const dateParagraph = document.createElement('p');
+        dateParagraph.textContent = `TODAY'S DATE by ${nameInput.value}`;
+        textContainer.appendChild(dateParagraph);
+
+        // p - comment
+        const commentParagraph = document.createElement('p');
+        commentParagraph.textContent = commentInput.value;
+        textContainer.appendChild(commentParagraph);
+
+        // clear input values
+        nameInput.value = ''
+        emailInput.value = ''
+        commentInput.value = ''
+      }
+
+      form.addEventListener('submit', submitHandler);
+    </script>
   </body>
 </html>
