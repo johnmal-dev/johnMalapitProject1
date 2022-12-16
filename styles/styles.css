@@ -735,6 +735,7 @@ a {
 .gallery .container .img-container {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
+  cursor: pointer;
 }
 .gallery .container .img-container img {
   max-width: 100%;
@@ -872,4 +873,18 @@ footer {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.closeBtn {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.closeBtn:hover {
+  color: rgb(255, 255, 255);
 }
